@@ -8,7 +8,7 @@ package com.mycompany.mavenproject1;
  *
  * @author alunolab10
  */
-public class Habilidades {
+public class Habilidade {
     private String nome;
     private String descricao;
     private int dano;
@@ -23,5 +23,6 @@ public class Habilidades {
     
     
 }
+
 
 
