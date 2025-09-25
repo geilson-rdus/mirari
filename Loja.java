@@ -34,50 +34,50 @@ public class Loja {
         int opcao = s.nextInt();
         switch(opcao){
             case 1:{
-                if(dinheiro >= itens.get(0).getValor()){
+                if(dinheiro >= itens.get(0).getValor() && itens.get(0).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
             case 2:{
-                if(dinheiro >= itens.get(1).getValor()){
+                if(dinheiro >= itens.get(1).getValor() && itens.get(1).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
             case 3:{
-                if(dinheiro >= itens.get(2).getValor()){
+                if(dinheiro >= itens.get(2).getValor() && itens.get(2).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
             case 4:{
-                if(dinheiro >= itens.get(3).getValor()){
+                if(dinheiro >= itens.get(3).getValor() && itens.get(3).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
             case 5:{
-                if(dinheiro >= itens.get(4).getValor()){
+                if(dinheiro >= itens.get(4).getValor() && itens.get(4).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
             case 6:{
-                if(dinheiro >= itens.get(5).getValor()){
+                if(dinheiro >= itens.get(5).getValor() && itens.get(5).getStatus().equals("Disponivel")){
                     itens.get(opcao-1).itemVendido();
                 }else{
-                    System.out.println("Sem dinheiro suficiente");
+                    System.out.println("Sem dinheiro suficiente ou item já comprado.");
                 }
                 break;
             }
