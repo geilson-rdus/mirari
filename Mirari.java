@@ -27,6 +27,7 @@ public class Mirari {
         l.adicionaItem(i4);
         l.adicionaItem(i5);
         l.adicionaItem(i6);
+        Inimigo inim = new Inimigo("Angelus a Rainha de Mirari", 100, 20, 20, 20, 100);
         
         System.out.println("ESCOLHA O PERSONAGEM INICIAL [INSIRA O NÚMERO CORRESPONDENTE]: ");
         System.out.printf("[1] - Thomas%nVida máxima - 20%nDefesa - 10%nAtaque - 10%nMana - 40%nVelocidade - 20%nDinheiro - 50%n%n");
@@ -132,5 +133,13 @@ public class Mirari {
                     break;
             }
         }while(loja >= 1 && loja <= 6);
+        
+        Batalha b = new Batalha(p1, inim);
+        int opcao = b.menu();
+        if(opcao == 3){
+           b.mostrarHabilidades(); 
+        }
+        
+        
     }
 }

@@ -57,12 +57,24 @@ public class Personagem {
         return this.mana;
     }
     
+    public int getVelocidade(){
+        return this.velocidade;
+    }
+    
     public int getDinheiro(){
         return this.dinheiro;
     }
     
     public int getNivel(){
         return this.nivel;
+    }
+    
+    public void setVida(int vida){
+        this.vida = vida;
+    }
+    
+    public ArrayList<Habilidade> getHabilidades() {
+        return habilidades;
     }
     
     public void gastaDinheiro(int dim){
@@ -72,5 +84,4 @@ public class Personagem {
     }
     
 }
-
 
