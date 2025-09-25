@@ -8,7 +8,7 @@ package com.mycompany.mavenproject1;
  *
  * @author alunolab10
  */
-public class Inimigos {
+public class Inimigo {
     private String nome;
     private int vida;
     private int ataque;
@@ -16,7 +16,7 @@ public class Inimigos {
     private int velocidade;
     private int dinheiro;
     
-    public void Inimigos(String nome, int vida, int ataque, int defesa, int velocidade, int dinheiro){
+    public void Inimigo(String nome, int vida, int ataque, int defesa, int velocidade, int dinheiro){
         this.nome = nome;
         this.vida = vida;
         this.ataque = ataque;
@@ -53,3 +53,4 @@ public class Inimigos {
         this.vida = vida;
     }
 }
+
