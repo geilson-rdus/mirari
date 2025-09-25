@@ -78,43 +78,58 @@ public class Mirari {
         //CICLO DA LOJA
         int loja = 1;
         
+        //VARIAVEIS C# QUE CONTAM QUANTAS VEZES O ITEM FOI VENDIDO, CADA ITEM SÓ PODE SER VENDIDO UMA VEZ
+        int c1 = 0;
+        int c2 = 0;
+        int c3 = 0;
+        int c4 = 0;
+        int c5 = 0;
+        int c6 = 0;
+        
         do{
             System.out.println("DINHEIRO DISPONÍVEL: " + p1.getDinheiro());
             System.out.println("");
             loja = l.comprarItem(p1.getDinheiro());
+            
             switch(loja){
                 case 1:
-                    if(p1.getDinheiro()>=i1.getValor()){
+                    if(p1.getDinheiro()>=i1.getValor() && c1==0){
                         p1.setDinheiro(i1.getValor());
+                        c1++;
                     }
                     break;
                 case 2:
-                    if(p1.getDinheiro()>=i2.getValor()){
+                    if(p1.getDinheiro()>=i2.getValor() && c2==0){
                         p1.setDinheiro(i2.getValor());
+                        c2++;
                     }
                     break;
                 case 3:
-                    if(p1.getDinheiro()>=i3.getValor()){
+                    if(p1.getDinheiro()>=i3.getValor() && c3==0){
                         p1.setDinheiro(i3.getValor());
+                        c3++;
                     }
                     break;
                 case 4:
-                    if(p1.getDinheiro()>=i4.getValor()){
+                    if(p1.getDinheiro()>=i4.getValor() && c4==0){
                         p1.setDinheiro(i4.getValor());
+                        c4++;
                     }
                     break;
                 case 5:
-                    if(p1.getDinheiro()>=i5.getValor()){
+                    if(p1.getDinheiro()>=i5.getValor() && c5==0){
                         p1.setDinheiro(i5.getValor());
+                        c5++;
                     }
                     break;
                 case 6:
-                    if(p1.getDinheiro()>=i6.getValor()){
+                    if(p1.getDinheiro()>=i6.getValor() && c6==0){
                         p1.setDinheiro(i6.getValor());
+                        c6++;
                     }
                     break;
                 default:
-                    System.out.println("Nenhum compra realizada");
+                    break;
             }
         }while(loja >= 1 && loja <= 6);
     }
