@@ -14,21 +14,27 @@ import java.util.ArrayList;
 public class Personagem {
     private String nome;
     private int vida;
+    private int vidaMaxima;
     private int defesa;
     private int ataque;
     private int mana;
     private int dinheiro;
     private int nivel;
-    private ArrayList<Habilidades> habilidades;
+    private int velocidade;
+    private ArrayList<Habilidade> habilidades = new ArrayList<>();
     
-    public Personagem(String nome, int vida, int defesa, int ataque, int mana, int dinheiro){
+    public Personagem(String nome, int vida, int defesa, int ataque, int mana, int dinheiro, int velocidade, Habilidade h1, Habilidade h2){
         this.nome = nome;
         this.vida = vida;
+        this.vidaMaxima = vida;
         this.defesa = defesa;
         this.ataque = ataque;
         this.mana = mana;
         this.dinheiro = dinheiro;
+        this.velocidade = velocidade;
         this.nivel = 1;
+        habilidades.add(h1);
+        habilidades.add(h2);
     }
     
     public String getNome(){
@@ -57,6 +63,12 @@ public class Personagem {
     
     public int getNivel(){
         return this.nivel;
+    }
+    
+    public void gastaDinheiro(int dim){
+        if(this.dinheiro >= dim){
+            this.dinheiro -= dim;
+        }
     }
     
 }
