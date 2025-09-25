@@ -18,6 +18,7 @@ public class Item {
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;
+        this.status = "Disponivel";
     }
     
     public String getNome(){
@@ -36,4 +37,7 @@ public class Item {
         return this.status;
     }
     
+    public void itemVendido(){
+        this.status = "Vendido";
+    }   
 }
