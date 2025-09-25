@@ -94,37 +94,37 @@ public class Mirari {
             switch(loja){
                 case 1:
                     if(p1.getDinheiro()>=i1.getValor() && c1==0){
-                        p1.setDinheiro(i1.getValor());
+                        p1.gastaDinheiro(i1.getValor());
                         c1++;
                     }
                     break;
                 case 2:
                     if(p1.getDinheiro()>=i2.getValor() && c2==0){
-                        p1.setDinheiro(i2.getValor());
+                        p1.gastaDinheiro(i2.getValor());
                         c2++;
                     }
                     break;
                 case 3:
                     if(p1.getDinheiro()>=i3.getValor() && c3==0){
-                        p1.setDinheiro(i3.getValor());
+                        p1.gastaDinheiro(i3.getValor());
                         c3++;
                     }
                     break;
                 case 4:
                     if(p1.getDinheiro()>=i4.getValor() && c4==0){
-                        p1.setDinheiro(i4.getValor());
+                        p1.gastaDinheiro(i4.getValor());
                         c4++;
                     }
                     break;
                 case 5:
                     if(p1.getDinheiro()>=i5.getValor() && c5==0){
-                        p1.setDinheiro(i5.getValor());
+                        p1.gastaDinheiro(i5.getValor());
                         c5++;
                     }
                     break;
                 case 6:
                     if(p1.getDinheiro()>=i6.getValor() && c6==0){
-                        p1.setDinheiro(i6.getValor());
+                        p1.gastaDinheiro(i6.getValor());
                         c6++;
                     }
                     break;
