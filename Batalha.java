@@ -9,5 +9,9 @@ package com.mycompany.mavenproject1;
  * @author alunolab10
  */
 public class Batalha {
-    private turno;
+    private Personagem p1;
+    private Inimigo inim;
+    
+    
 }
+
