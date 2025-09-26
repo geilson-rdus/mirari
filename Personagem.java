@@ -21,6 +21,7 @@ public class Personagem {
     private int dinheiro;
     private int nivel;
     private int velocidade;
+    private int pocao;
     private ArrayList<Habilidade> habilidades = new ArrayList<>();
     
     public Personagem(String nome, int vida, int defesa, int ataque, int mana, int dinheiro, int velocidade, Habilidade h1, Habilidade h2){
@@ -33,6 +34,7 @@ public class Personagem {
         this.dinheiro = dinheiro;
         this.velocidade = velocidade;
         this.nivel = 1;
+        this.pocao = 0;
         habilidades.add(h1);
         habilidades.add(h2);
     }
@@ -43,6 +45,10 @@ public class Personagem {
     
     public int getVida(){
         return this.vida;
+    }
+    
+    public int getVidaMaxima(){
+        return this.vidaMaxima;
     }
     
     public int getDefesa(){
@@ -57,12 +63,32 @@ public class Personagem {
         return this.mana;
     }
     
+    public int getVelocidade(){
+        return this.velocidade;
+    }
+    
+    public int getPocao(){
+        return this.pocao;
+    }
+    
+    public void setPocao(){
+        this.pocao ++;
+    }
+    
     public int getDinheiro(){
         return this.dinheiro;
     }
     
     public int getNivel(){
         return this.nivel;
+    }
+    
+    public void setVida(int vida){
+        this.vida = vida;
+    }
+    
+    public ArrayList<Habilidade> getHabilidades() {
+        return habilidades;
     }
     
     public void gastaDinheiro(int dim){
@@ -72,5 +98,4 @@ public class Personagem {
     }
     
 }
-
 
