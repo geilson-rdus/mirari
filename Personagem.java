@@ -15,24 +15,29 @@ public class Personagem {
     private String nome;
     private int vida;
     private int vidaMaxima;
-    private int defesa;
     private int ataque;
+    private int ataqueMaximo;
     private int mana;
+    private int manaMaxima;
     private int dinheiro;
     private int nivel;
     private int velocidade;
+    private int pocao;
+    private int pocaoMana;
     private ArrayList<Habilidade> habilidades = new ArrayList<>();
     
     public Personagem(String nome, int vida, int defesa, int ataque, int mana, int dinheiro, int velocidade, Habilidade h1, Habilidade h2){
         this.nome = nome;
         this.vida = vida;
         this.vidaMaxima = vida;
-        this.defesa = defesa;
         this.ataque = ataque;
+        this.ataqueMaximo = ataque;
         this.mana = mana;
+        this.manaMaxima = mana;
         this.dinheiro = dinheiro;
         this.velocidade = velocidade;
         this.nivel = 1;
+        this.pocao = 0;
         habilidades.add(h1);
         habilidades.add(h2);
     }
@@ -45,16 +50,82 @@ public class Personagem {
         return this.vida;
     }
     
-    public int getDefesa(){
-        return this.defesa;
+    public int getVidaMaxima(){
+        return this.vidaMaxima;
+    }
+    
+    public void setVidaMaxima(){
+        this.vidaMaxima += 30;
     }
     
     public int getAtaque(){
         return this.ataque;
     }
     
+    public void setAtaque(){
+        this.ataque += 10;
+    }
+    
+    public int getAtaqueMaximo(){
+        return this.ataqueMaximo;
+    }
+    
+    public void setAtaqueMaximo(){
+        this.ataqueMaximo += 10;
+    }
+    
+    public void kenai(String nome){
+        if(nome.equals("Kenai Treeclubs")){
+            this.ataque = this.ataqueMaximo;
+        }
+    }
+    
     public int getMana(){
         return this.mana;
+    }
+    
+    public void setMana(int mana){
+        this.mana = mana;
+    }
+    
+    public int getVelocidade(){
+        return this.velocidade;
+    }
+    
+    public void setVelocidade(){
+        this.velocidade += 10;
+    }
+    
+    public int getPocao(){
+        return this.pocao;
+    }
+    
+    public void setPocao(){
+        this.pocao ++;
+    }
+    
+    public void usarVida(){
+        this.pocao --;
+    }
+    
+    public int getPocaoMana(){
+        return this.pocaoMana;
+    }
+    
+    public void setPocaoMana(){
+        this.pocaoMana ++;
+    }
+    
+    public void usarMana(){
+        this.pocaoMana --;
+    }
+    
+    public int getManaMaxima(){
+        return this.manaMaxima;
+    }
+    
+    public void setManaMaxima(){
+        this.manaMaxima += 10;
     }
     
     public int getDinheiro(){
@@ -65,6 +136,14 @@ public class Personagem {
         return this.nivel;
     }
     
+    public void setVida(int vida){
+        this.vida = vida;
+    }
+    
+    public ArrayList<Habilidade> getHabilidades() {
+        return habilidades;
+    }
+    
     public void gastaDinheiro(int dim){
         if(this.dinheiro >= dim){
             this.dinheiro -= dim;
@@ -72,5 +151,4 @@ public class Personagem {
     }
     
 }
-
 
