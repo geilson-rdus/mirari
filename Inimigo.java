@@ -12,15 +12,13 @@ public class Inimigo {
     private String nome;
     private int vida;
     private int ataque;
-    private int defesa;
     private int velocidade;
     private int dinheiro;
     
-    public void Inimigo(String nome, int vida, int ataque, int defesa, int velocidade, int dinheiro){
+    public Inimigo(String nome, int vida, int ataque, int defesa, int velocidade, int dinheiro){
         this.nome = nome;
         this.vida = vida;
         this.ataque = ataque;
-        this.defesa = defesa;
         this.velocidade = velocidade;
         this.dinheiro = dinheiro;
     }
@@ -37,10 +35,6 @@ public class Inimigo {
         return ataque;
     }
     
-    public int getDefesa(){
-        return defesa;
-    }
-    
     public int getVelocidade(){
         return velocidade;
     }
@@ -53,4 +47,5 @@ public class Inimigo {
         this.vida = vida;
     }
 }
+
 
