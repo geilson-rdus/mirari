@@ -14,15 +14,31 @@ public class Habilidade {
     private int dano;
     private int custo;
     
-    public Habilidades(String nome, String descricao, int dano, int custo){
+    public Habilidade(String nome, String descricao, int dano, int custo){
         this.nome = nome;
         this.descricao = descricao;
         this.dano = dano;
         this.custo = custo;
     }
     
+    public String getNome(){
+        return nome;
+    }
+    
+    public String getDescricao(){
+        return descricao;
+    }
+    
+    public int getDano(){
+        return dano;
+    }
+    
+    public int getCusto(){
+        return custo;
+    }
     
 }
+
 
 
 
