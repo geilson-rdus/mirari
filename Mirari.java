@@ -105,6 +105,7 @@ public class Mirari {
                 p1.setManaMaxima();
                 p1.setMana(p1.getManaMaxima());
                 p1.ganhaDinheiroBatalha();
+                p1.setVelocidade();
                 p1.getHabilidades().get(0).setDano();
                 p1.getHabilidades().get(1).setDano();
                 if(z % 3 == 0){
