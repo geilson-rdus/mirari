@@ -99,6 +99,14 @@ public class Mirari {
             if (resultado == 1) {
                 System.out.println("O jogador derrotou " + inimigo.getNome() + "\n");
                 z ++;
+                p1.setNivel();
+                p1.setAtaque();
+                p1.setAtaqueMaximo();
+                p1.setManaMaxima();
+                p1.setMana(p1.getManaMaxima());
+                p1.ganhaDinheiroBatalha();
+                p1.getHabilidades().get(0).setDano();
+                p1.getHabilidades().get(1).setDano();
                 if(z % 3 == 0){
                    l.menu(); 
                 } 
