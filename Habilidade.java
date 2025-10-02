@@ -36,8 +36,13 @@ public class Habilidade {
     public int getCusto(){
         return custo;
     }
+
+    public void setDano(){
+        this.dano += 5;
+    }
     
 }
+
 
 
 
