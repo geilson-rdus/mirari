@@ -136,6 +136,10 @@ public class Personagem {
         return this.nivel;
     }
     
+    public void setNivel(){
+        this.nivel ++;
+    }
+    
     public void setVida(int vida){
         this.vida = vida;
     }
@@ -150,5 +154,11 @@ public class Personagem {
         }
     }
     
+    public void ganhaDinheiroBatalha(){
+        this.dinheiro += 20;
+    }
+    
 }
+
+
 
