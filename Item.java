@@ -6,19 +6,21 @@ package com.mycompany.mirari;
 
 /**
  *
- * @author alunolab10
+ * @author Augusto Luiz Marim e Geilson Lucas de Souza Silva - CC3M
  */
 public class Item {
     private String nome;
     private int valor;
     private String descricao;
     private String status;
+    private int qtdVendida;
     
     public Item(String nome, int valor, String descricao){
         this.nome = nome;
         this.valor = valor;
         this.descricao = descricao;
         this.status = "Disponivel";
+        this.qtdVendida = 0;
     }
     
     public String getNome(){
@@ -39,5 +41,13 @@ public class Item {
     
     public void itemVendido(){
         this.status = "Vendido";
-    }   
+    }
+    
+    public int getQtd(){
+        return this.qtdVendida;
+    }
+    
+    public void contador(){
+        this.qtdVendida ++;
+    }
 }
