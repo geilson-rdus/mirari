@@ -9,7 +9,7 @@ Desenvolvido por: Augusto Luiz Marim e Geilson Lucas de Souza Silva — CC3M
 
 Ao iniciar, escolha um dos quatro heróis — cada um tem atributos, estilo de jogo e habilidades únicas:
 
-Thomas Holycups — Mago elemental com alto poder de mana e habilidades que causam fogo e cegueira. 
+Thomas Holycups — Mago elemental com alto poder de mana e habilidades que causam fogo e cegueira. 	
 Kenai Treeclubs — Ranger veloz especializado em veneno e buffs de ataque. 
 Cassandra Snowblade — Guerreira versátil que congela inimigos e ataca múltiplas vezes.
 Melissa Goldwharf — Suporte que enfraquece inimigos e ganha bônus de ouro nas batalhas.
